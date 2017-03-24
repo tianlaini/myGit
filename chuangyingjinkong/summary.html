@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="keywords" content="创盈金控" />
+    	<meta name="description" content="创盈金控" />
+		<title>创盈金控-创意无限，携手共盈！</title>
+		<link rel="shortcut icon" type="image/png" href="img/favicon.ico">
+		<!-- <link rel="stylesheet" type="text/css" href="css/main.css" /> -->
+		<style type="text/css">
+			html{height: 100%;}
+			body,nav,dl,dt,dd,p,h1,h2,h3,h4,ul,ol,li,input,button,textarea,footer {margin: 0;padding: 0;}
+			body {font: 14px/1.5 tahoma,arial,Microsoft YaHei; font-family: "微软雅黑";background-color:#FFFFFF;min-width: 1200px;height: 100%;}
+			h1,h2,h3,h4,h5,h6 {font-size: 100%}
+			form {display: inline}
+			ul,ol {list-style: none}
+			img {vertical-align: middle;border: 0;-ms-interpolation-mode: bicubic;}
+			button,input,select,textarea {font-size: 100%;outline: none;}
+			textarea {resize: none}
+			button,input[type="button"],input[type="reset"],input[type="submit"] {cursor: pointer;-webkit-appearance: button;-moz-appearance: button}
+			input:focus:-moz-placeholder,input:focus::-webkit-input-placeholder {color: transparent}
+			button::-moz-focus-inner,
+			input::-moz-focus-inner {padding: 0;border: 0}
+			table {border-collapse: collapse;border-spacing: 0}
+			a{text-decoration:none;color:#989898;}
+			a[title=站长统计]{display: none;}
+			.a_h_r:hover{color:#ed7b00;}
+			.clear{clear:both;}
+			.main{text-align:center;}
+
+
+
+			/*header  height:125px*/
+			.wrap{position: relative;height: 100%;}
+			.header{position: relative;width: 100%;width: 100%; height: 120px;}
+			.header_nav{width:1200px;margin:0 auto;height: 100px;}
+			.header_logo{float:left;}
+			.logo_tipsm{margin-top: -15px;}
+			.header_nav_img{float: right;width: 100px;margin-top: 40px;position: relative;}
+
+			.header_nav_link{float:right;display:inline-block;margin-top:35px;margin-right: 20px;}
+			.header_nav_link li{float:left;padding:5px 20px;}
+			.header_nav_link li a{color:black;color:#545454;font-size:20px;}
+			.header_nav_link li.active a{color:#FF8A26;}
+			.header_nav_link li:hover a{color:#FF8A26;}
+			.header_top .pic_39:hover{background-position:-10px -18px;}
+			.header_top .pic_38:hover{background-position:-54px -17px;}
+			.header_bar{position:absolute;height:3px;width:88px;background-color:#ff8081;left:946px;margin-top:75px;display:none;} 
+			/*header end*/
+			.main{width: 100%;height: 100%;position: absolute; overflow: hidden; top: 120px; min-width: 1200px;}
+			.mainSummary{width: 100%; height: 96px;background: #363838;/*filter: Alpha(opacity=50); -moz-opacity: 0.5; opacity: 0.5;*/position: absolute;bottom: 32px;}
+
+			.bottomTaps{width: 1200px;height: 96px;margin: 0 auto;border-left: 1px solid #4c5059;border-right: 1px solid #4c5059;}
+			.bottomTaps li{width: 399px;height: 96px;float: left;}
+			.bottomTaps li.lfborder{border-left: 1px solid #4c5059;border-right: 1px solid #4c5059;}
+			.bottomTaps li a{display: inline-block; width: 399px;height: 96px;}
+
+			.layleft{width: 160px;float: left; color: #fff;border-right: 2px solid red;font-size: 32px;}
+			.layright{width: 1037px;float: left; color: #fff;}
+			.footer{width: 100%;height: 32px; position: absolute;bottom: 0;left: 0;text-align: center;line-height: 32px;background: #555555; color: #a5a5a5;}
+
+			/* youposition */
+			.sp{background: url(img/sp.png); display: inline-block;}
+			.sp{*display:inline;}
+			.sp1{background-position:-13px -10px;width: 160px; height: 45px;position: absolute;left: 5px;bottom: 12px;}
+			.youposition{width: 1200px;height: 100px;margin: 0 auto;border-bottom: 1px solid #FFF;text-align: left;position: relative;}
+			.gowhere{font-size: 16px;color: #FFF;line-height: 24px;padding-left:180px;padding-top: 65px; }
+
+			.summarycontent{width: 1200px;height: 548px;background: #FFF;margin: 20px auto 0;text-align: left;overflow: hidden;}
+			.contenttitle{width: 960px;height: 90px;border-bottom: 1px solid #eeeeee;margin-left: 180px;}
+			.summarycl{font-size: 22px;color: #eeeeee;line-height: 32px;padding-top: 60px;display: inline-block;}
+			#tabs{float: right;text-align: center;margin-top: 50px;}
+			#tabs li{width: 90px;height: 40px;font-size: 16px; float: left; line-height: 40px;}
+			#tabs li a{width: 90px;height: 40px;font-size: 16px; float: left; line-height: 40px;display: inline-block;position: relative;}
+			/*#tabs a:hover, #tabs a:focus {border-bottom: 1px solid #ff3333; color: #cdac65;}		*/
+			#current{border-bottom: 1px solid #ff3333; color: #cdac65;}	
+
+
+			.spbt1{background-position:-165px -70px; width: 70px; height: 96px;float: left;margin-left: 120px;}
+			.spbt2{background-position:-305px -70px; width: 70px; height: 96px;float: left;margin-left: 120px;}
+			.spbt3{background-position:-450px -70px; width: 70px; height: 96px;float: left;margin-left: 120px;}
+			.btf{float: left;height: 96px;margin-left: 15px;text-align: left;}
+			.btf p{padding-top: 24px;}
+			#bactive{color: #ebd094;background: #212121;}
+			#bactive i{background-position-y:-175px; }
+			.bottomline{position: absolute;bottom: 0;height: 4px;width: 399px;background: #ebd094;display: none;}
+			#bactive .bottomline{display: block;}
+
+			
+			#tab3 { width: 520px; clear: both; margin: 20px 0 10px; }
+			#tab3 .viewport { width: 500px; height: 200px; overflow: hidden; position: relative; }
+			#tab3 .overview { list-style: none; position: absolute; left: 0; top: 0; }
+			#tab3 .thumb .end,
+			#tab3 .thumb { background-color: #003D5D; }
+			#tab3 .scrollbar { position: relative; float: right; width: 15px; }
+			#tab3 .track { background-color: #D8EEFD; height: 100%; width:13px; position: relative; padding: 0 1px; }
+			#tab3 .thumb { height: 20px; width: 13px; cursor: pointer; overflow: hidden; position: absolute; top: 0; }
+			#tab3 .thumb .end { overflow: hidden; height: 5px; width: 13px; }
+			#tab3 .disable{ display: none; }
+			.noSelect { user-select: none; -o-user-select: none; -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; }
+		</style>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="header">
+				<div class="header_nav">
+					<div class="header_logo">
+						<a href="index.html"><img src="img/index0_02.jpg"/></a>
+					</div>
+					<ul class="header_nav_link">
+						<li class="active" id="header_bar_c"><a href="index.html">首页</a></li>
+						<li><a href="guarantee.html">企业文化</a></li>
+						<li><a href="about_we.html">关于我们</a></li>
+						<li><a href="find_us.html">联系我们</a></li>
+					</ul>
+					<div id="header_bar" class="header_bar"></div>
+				</div>
+			</div>
+			<!-- <div class="main"> -->
+			<!-- <embed width="700" height="500" allowscriptaccess="never" allownetworking="none" src="http://nitrome.com.4399.com:8080/4399swf//upload_swf/ftp/20090603/1.swf"> -->
+			<div class="main" id="bcontent">
+				<div style="background:url(img/summaryBg.jpg) no-repeat center;height:100%;" id="bottomTap1">
+					<div class="youposition">
+						<i class="sp sp1"></i>
+						<p class="gowhere">首页/关于我们/创盈纪要</p>
+					</div>
+					<div class="summarycontent">
+						<div class="contenttitle">
+							<p class="summarycl">发展历程</p>
+							<ul id="tabs">
+						      <li><a href="javacscript:void(0);" name="#tab1">2014年</a></li>
+						      <li><a href="javacscript:void(0);" name="#tab2">2015年</a></li>
+						      <li><a href="javacscript:void(0);" name="#tab3">2016年</a></li>
+						  </ul>
+						</div>
+						<div class="summarymain" id="content">
+							<div id="tab1">
+					          <h2>Lorem ipsum sit amet11111111111111111111111111111111111111111111111</h2>
+					          <p>Praesent risus nisi, iaculis nec condimentum vel, rhoncus vel dolor. Aenean nisi lectus, varius nec tempus id, dapibus non quam.</p>
+					          <p>Suspendisse ac libero mauris. Cras lacinia porttitor urna, vitae molestie libero posuere et. Mauris turpis tortor, mollis non vulputate sit amet, rhoncus vitae purus.</p>
+					          <h3>Pellentesque habitant</h3>
+					          <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>    
+					        </div>
+							<div id="tab2">
+					          <h2>Lorem ipsum sit 222222222222222222222222</h2>
+					          <p>Praesent risus nisi, iaculis nec condimentum vel, rhoncus vel dolor. Aenean nisi lectus, varius nec tempus id, dapibus non quam.</p>
+					          <p>Suspendisse ac libero mauris. Cras lacinia porttitor urna, vitae molestie libero posuere et. Mauris turpis tortor, mollis non vulputate sit amet, rhoncus vitae purus.</p>
+					          <h3>Pellentesque habitant</h3>
+					          <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>    
+					        </div>
+					        <!-- <div id="tab3">
+					          <h2>Lorem ipsum sit amet23333333333333333333333333333</h2>
+					          <p>Praesent risus nisi, iaculis nec condimentum vel, rhoncus vel dolor. Aenean nisi lectus, varius nec tempus id, dapibus non quam.</p>
+					          <p>Suspendisse ac libero mauris. Cras lacinia porttitor urna, vitae molestie libero posuere et. Mauris turpis tortor, mollis non vulputate sit amet, rhoncus vitae purus.</p>
+					          <h3>Pellentesque habitant</h3>
+					          <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>    
+					        </div> -->
+
+					        <div id="tab3">
+							    <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+							    <div class="viewport">
+							        <div class="overview">
+							            <h3>Magnis dis parturient montes</h3>
+							            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae velit at velit pretium sodales. Maecenas egestas imperdiet mauris, vel elementum turpis iaculis eu. Duis egestas augue quis ante ornare eu tincidunt magna interdum. Vestibulum posuere risus non ipsum sollicitudin quis viverra ante feugiat. Pellentesque non faucibus lorem. Nunc tincidunt diam nec risus ornare quis porttitor enim pretium. Ut adipiscing tempor massa, a ullamcorper massa bibendum at. Suspendisse potenti. In vestibulum enim orci, nec consequat turpis. Suspendisse sit amet tellus a quam volutpat porta. Mauris ornare augue ut diam tincidunt elementum. Vivamus commodo dapibus est, a gravida lorem pharetra eu. Maecenas ultrices cursus tellus sed congue. Cras nec nulla erat.</p>
+							 
+							            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque eget mauris libero. Nulla sit amet felis in sem posuere laoreet ut quis elit. Aenean mauris massa, pretium non bibendum eget, elementum sed nibh. Nulla ac felis et purus adipiscing rutrum. Pellentesque a bibendum sapien. Vivamus erat quam, gravida sed ultricies ac, scelerisque sed velit. Integer mollis urna sit amet ligula aliquam ac sodales arcu euismod. Fusce fermentum augue in nulla cursus non fermentum lorem semper. Quisque eu auctor lacus. Donec justo justo, mollis vel tempor vitae, consequat eget velit.</p>
+							 
+							            <p>Vivamus sed tellus quis orci dignissim scelerisque nec vitae est. Duis et elit ipsum. Aliquam pharetra auctor felis tempus tempor. Vivamus turpis dui, sollicitudin eget rhoncus in, luctus vel felis. Curabitur ultricies dictum justo at luctus. Nullam et quam et massa eleifend sollicitudin. Nulla mauris purus, sagittis id egestas eu, pellentesque et mi. Donec bibendum cursus nisi eget consequat. Nunc sit amet commodo metus. Integer consectetur lacus ac libero adipiscing ut tristique est viverra. Maecenas quam nibh, molestie nec pretium interdum, porta vitae magna. Maecenas at ligula eget neque imperdiet faucibus malesuada sed ipsum. Nulla auctor ligula sed nisl adipiscing vulputate. Curabitur ut ligula sed velit pharetra fringilla. Cras eu luctus est. Aliquam ac urna dui, eu rhoncus nibh. Nam id leo nisi, vel viverra nunc. Duis egestas pellentesque lectus, a placerat dolor egestas in. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec vitae ipsum non est iaculis suscipit.</p>
+							 
+							            <h3>Adipiscing risus </h3>
+							            <p>Quisque vel felis ligula. Cras viverra sapien auctor ante porta a tincidunt quam pulvinar. Nunc facilisis, enim id volutpat sodales, leo ipsum accumsan diam, eu adipiscing risus nisi eu quam. Ut in tortor vitae elit condimentum posuere vel et erat. Duis at fringilla dolor. Vivamus sem tellus, porttitor non imperdiet et, rutrum id nisl. Nunc semper facilisis porta. Curabitur ornare metus nec sapien molestie in mattis lorem ullamcorper. Ut congue, purus ac suscipit suscipit, magna diam sodales metus, tincidunt imperdiet diam odio non diam. Ut mollis lobortis vulputate. Nam tortor tortor, dictum sit amet porttitor sit amet, faucibus eu sem. Curabitur aliquam nisl sed est semper a fringilla velit porta. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum in sapien id nulla volutpat sodales ac bibendum magna. Cras sollicitudin, massa at sodales sodales, lacus tortor vestibulum massa, eu consequat dui nulla et ipsum.</p>
+							 
+							            <p>Aliquam accumsan aliquam urna, id vulputate ante posuere eu. Nullam pretium convallis tincidunt. Duis vitae odio arcu, ut fringilla enim. Nam ante eros, vestibulum sit amet rhoncus et, vehicula quis tellus. Curabitur sed iaculis odio. Praesent vitae ligula id tortor ornare luctus. Integer placerat urna non ligula sollicitudin vestibulum. Nunc vestibulum auctor massa, at varius nibh scelerisque eget. Aliquam convallis, nunc non laoreet mollis, neque est mattis nisl, nec accumsan velit nunc ut arcu. Donec quis est mauris, eu auctor nulla. Fusce leo diam, tempus a varius sit amet, auctor ac metus. Nam turpis nulla, fermentum in rhoncus et, auctor id sem. Aliquam id libero eu neque elementum lobortis nec et odio.</p>
+							        </div>
+							    </div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div style="background:url(img/index_02.jpg) no-repeat center;height:100%;" id="bottomTap2"></div>
+				<div style="background:url(img/summaryBg.jpg) no-repeat center;height:100%;" id="bottomTap3"></div>
+			</div>
+			<!-- </div> -->
+			<div class="mainSummary">
+						<ul class="bottomTaps" id="bottomTaps">
+							<li>
+								<a href="javacscript:void(0);" name="#bottomTap1">
+									<i class="sp spbt1"></i>
+									<div class="btf">
+										<p>关于我们</p>
+										<span>About</span>
+									</div>
+									<div class="bottomline"></div>
+								</a>
+							</li>
+							<li class="lfborder">
+								<a href="javacscript:void(0);" name="#bottomTap2">
+									<i class="sp spbt2"></i>
+									<div class="btf">
+										<p>创盈纪要</p>
+										<span>Summary</span>
+									</div>
+									<div class="bottomline"></div>
+								</a>
+							</li>
+							<li>
+								<a href="javacscript:void(0);" name="#bottomTap3">
+									<i class="sp spbt3"></i>
+									<div class="btf">
+										<p>合作伙伴</p>
+										<span>Partners</span>
+									</div>
+									<div class="bottomline"></div>
+								</a>
+							</li>
+						</ul>
+					</div>
+			<div class="footer">
+				Copyright&copy;2014 www.chuangyingjinkong.com All rights reserved 深圳市创盈金融控股有限公司 版权所有 <a href="http://www.miitbeian.gov.cn" target="_blank">粤ICP备15078830号-1</a>
+			</div>
+		</div>	
+		
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.tinyscrollbar.js" type="text/javascript" charset="utf-8"></script>
+		<script> 
+			$(function(){
+			    $(window).resize({
+			        delay: 10
+			    }, function(){   
+			        fixScreen();
+			    });
+			    fixScreen();
+			    function fixScreen(){
+		            // var screenWd = $("body").width();  
+		            var screenHd = $("body").height();
+		            console.log(screenHd);
+		            $(".main").css("height",screenHd-$(".header").height()-$(".footer").height());
+		            // var point = screenWd/screenHd;
+		            // if(point>1920/1080){  /*缩放宽度太宽 高度不够*/
+		            //     var scalHeight =screenWd*1080/1920;  /*根据缩放宽度，找出新高度，根据新高度，找出新宽度*/
+		            //     var newWidth = scalHeight*1920/1080;
+		            //     $(".resizeArea,.scaleBg").css({width: newWidth, marginLeft: -newWidth/2,position:"absolute",left:"50%"}); 
+		            // }else{   /*缩放高度太高，宽度不够*/
+		            //     var scalWidth = screenHd*1920/1080;
+		            //     $(".resizeArea,.scaleBg").css({width: scalWidth, marginLeft: -scalWidth/2,position:"absolute",left:"50%"}); 
+		            // }
+		        }
+		        console.log("gogogogogogogoggo!!!");
+			})  
+		</script>
+		<script>
+	    function switchTaps(content,tabs,current) {
+		    $("#"+content+" > div").hide(); // Initially hide all content
+	        $("#"+tabs+" li:first a").attr("id",current); // Activate first tab
+	        $("#"+content+" > div:first").fadeIn(); // Show first tab content
+	        $("#"+tabs+" a").on("click",function(e) {
+	            e.preventDefault();
+	            if ($(this).attr("id") == current){ //detection for current tab
+	            	return;       
+	            } else{
+					$("#"+content+" > div").hide(); //Hide all content
+	        		$("#"+tabs+" a").attr("id",""); //Reset id's      
+	            	$(this).attr("id",current); // Activate this
+	            	$($(this).attr('name')).fadeIn(); // Show content for current tab
+	            	if ($(this).attr('name') == "#tab3") {
+	            		console.log("就是这个Tab！")
+	            		$('#tab3').tinyscrollbar();
+	            	}
+	            }
+	        });
+	    }
+	    switchTaps("content","tabs","current");
+	    switchTaps("bcontent","bottomTaps","bactive");
+	  	</script>
+	</body>
+</html>

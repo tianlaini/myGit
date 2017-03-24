@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="升值宝" />
+    <meta name="description" content="升值宝" />
+    <title>升值宝_联系我们</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <style type="text/css">
+    /*@charset "UTF-8";*/
+    
+    .blueimp-gallery,
+    .blueimp-gallery>.slides>.slide>.slide-content {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        -moz-backface-visibility: hidden
+    }
+    
+    .blueimp-gallery>.slides>.slide>.slide-content {
+        margin: auto;
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+        opacity: 1
+    }
+    
+    .blueimp-gallery {
+        position: fixed;
+        z-index: 999999;
+        overflow: hidden;
+        background: #000;
+        background: rgba(0, 0, 0, .9);
+        opacity: 0;
+        display: none;
+        direction: ltr;
+        -ms-touch-action: none;
+        touch-action: none
+    }
+    
+    .blueimp-gallery-carousel {
+        position: relative;
+        z-index: auto;
+        margin: 1em auto;
+        padding-bottom: 56.25%;
+        box-shadow: 0 0 10px #000;
+        -ms-touch-action: pan-y;
+        touch-action: pan-y
+    }
+    
+    .blueimp-gallery-display {
+        display: block;
+        opacity: 1
+    }
+    
+    .blueimp-gallery>.slides {
+        position: relative;
+        height: 100%;
+        overflow: hidden
+    }
+    
+    .blueimp-gallery-carousel>.slides {
+        position: absolute
+    }
+    
+    .blueimp-gallery>.slides>.slide {
+        position: relative;
+        float: left;
+        height: 100%;
+        text-align: center;
+        -webkit-transition-timing-function: cubic-bezier(0.645, .045, .355, 1);
+        -moz-transition-timing-function: cubic-bezier(0.645, .045, .355, 1);
+        -ms-transition-timing-function: cubic-bezier(0.645, .045, .355, 1);
+        -o-transition-timing-function: cubic-bezier(0.645, .045, .355, 1);
+        transition-timing-function: cubic-bezier(0.645, .045, .355, 1)
+    }
+    
+    .blueimp-gallery,
+    .blueimp-gallery>.slides>.slide>.slide-content {
+        -webkit-transition: opacity .5s linear;
+        -moz-transition: opacity .5s linear;
+        -ms-transition: opacity .5s linear;
+        -o-transition: opacity .5s linear;
+        transition: opacity .5s linear
+    }
+    
+    .blueimp-gallery>.slides>.slide-loading {
+        background-size: 64px 64px
+    }
+    
+    .blueimp-gallery>.slides>.slide-loading>.slide-content {
+        opacity: 0
+    }
+    
+    .blueimp-gallery>.slides>.slide-error {
+        background: url(/public/images/1/imgerror.png) center no-repeat
+    }
+    
+    .blueimp-gallery>.slides>.slide-error>.slide-content {
+        display: none
+    }
+    
+    .blueimp-gallery>.prev,
+    .blueimp-gallery>.next {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        width: 40px;
+        height: 40px;
+        margin-top: -23px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 60px;
+        font-weight: 100;
+        line-height: 30px;
+        color: #fff;
+        text-decoration: none;
+        text-shadow: 0 0 2px #000;
+        text-align: center;
+        background: #222;
+        background: rgba(0, 0, 0, .5);
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        border: 3px solid #fff;
+        -webkit-border-radius: 23px;
+        -moz-border-radius: 23px;
+        border-radius: 23px;
+        opacity: .5;
+        cursor: pointer
+    }
+    
+    .blueimp-gallery>.next {
+        left: auto;
+        right: 15px
+    }
+    
+    .blueimp-gallery>.close,
+    .blueimp-gallery>.title {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        margin: 0 40px 0 0;
+        font-size: 20px;
+        line-height: 30px;
+        color: #fff;
+        text-shadow: 0 0 2px #000;
+        opacity: .8
+    }
+    
+    .blueimp-gallery>.close {
+        padding: 15px;
+        right: 15px;
+        left: auto;
+        margin: -15px;
+        font-size: 30px;
+        text-decoration: none;
+        cursor: pointer
+    }
+    
+    .blueimp-gallery>.play-pause {
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
+        width: 15px;
+        height: 15px;
+        cursor: pointer;
+        opacity: .5
+    }
+    
+    .blueimp-gallery-playing>.play-pause {
+        background-position: -15px 0
+    }
+    
+    .blueimp-gallery>.prev:hover,
+    .blueimp-gallery>.next:hover,
+    .blueimp-gallery>.close:hover,
+    .blueimp-gallery>.title:hover,
+    .blueimp-gallery>.play-pause:hover {
+        color: #fff;
+        opacity: 1
+    }
+    
+    .blueimp-gallery-controls>.prev,
+    .blueimp-gallery-controls>.next,
+    .blueimp-gallery-controls>.close,
+    .blueimp-gallery-controls>.title,
+    .blueimp-gallery-controls>.play-pause {
+        display: block;
+        -webkit-transform: translateZ(0);
+        -moz-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        -o-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+    
+    .blueimp-gallery-single>.prev,
+    .blueimp-gallery-left>.prev,
+    .blueimp-gallery-single>.next,
+    .blueimp-gallery-right>.next,
+    .blueimp-gallery-single>.play-pause {
+        display: none
+    }
+    
+    .blueimp-gallery>.slides>.slide>.slide-content,
+    .blueimp-gallery>.prev,
+    .blueimp-gallery>.next,
+    .blueimp-gallery>.close,
+    .blueimp-gallery>.play-pause {
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none
+    }
+    
+    body:last-child .blueimp-gallery>.slides>.slide-error {
+        background-image: url(/public/images/1/imgerror.svg)
+    }
+    
+    body:last-child .blueimp-gallery>.play-pause {
+        width: 20px;
+        height: 20px;
+        background-size: 40px 20px;
+    }
+    
+    body:last-child .blueimp-gallery-playing>.play-pause {
+        background-position: -20px 0
+    }
+    
+    *+html .blueimp-gallery>.slides>.slide {
+        min-height: 300px
+    }
+    
+    *+html .blueimp-gallery>.slides>.slide>.slide-content {
+        position: relative
+    }
+    /*@charset "UTF-8";*/
+    
+    .blueimp-gallery>.indicator {
+        position: absolute;
+        top: auto;
+        right: 15px;
+        bottom: 15px;
+        left: 15px;
+        margin: 0 40px;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        line-height: 10px
+    }
+    
+    .blueimp-gallery>.indicator>li {
+        display: inline-block;
+        width: 9px;
+        height: 9px;
+        margin: 6px 3px 0;
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        border: 1px solid transparent;
+        background: #ccc;
+        background: rgba(255, 255, 255, .25)center no-repeat;
+        border-radius: 5px;
+        box-shadow: 0 0 2px #000;
+        opacity: .5;
+        cursor: pointer
+    }
+    
+    .blueimp-gallery>.indicator>li:hover,
+    .blueimp-gallery>.indicator>.active {
+        background-color: #fff;
+        border-color: #fff;
+        opacity: 1
+    }
+    
+    .blueimp-gallery-controls>.indicator {
+        display: block;
+        -webkit-transform: translateZ(0);
+        -moz-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        -o-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+    
+    .blueimp-gallery-single>.indicator {
+        display: none
+    }
+    
+    .blueimp-gallery>.indicator {
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none
+    }
+    
+    *+html .blueimp-gallery>.indicator>li {
+        display: inline
+    }
+    /*@charset "UTF-8";*/
+    
+    .blueimp-gallery>.slides>.slide>.video-content>img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+        -moz-backface-visibility: hidden
+    }
+    
+    .blueimp-gallery>.slides>.slide>.video-content>video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%
+    }
+    
+    .blueimp-gallery>.slides>.slide>.video-content>iframe {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none
+    }
+    
+    .blueimp-gallery>.slides>.slide>.video-playing>iframe {
+        top: 0
+    }
+    
+    .blueimp-gallery>.slides>.slide>.video-content>a {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        left: 0;
+        margin: -64px auto 0;
+        width: 128px;
+        height: 128px;
+        background: url(/public/images/1/imgvideo-play.png) center no-repeat;
+        opacity: .8;
+        cursor: pointer
+    }
+    
+    .blueimp-gallery>.slides>.slide>.video-content>a:hover {
+        opacity: 1
+    }
+    
+    .blueimp-gallery>.slides>.slide>.video-playing>a,
+    .blueimp-gallery>.slides>.slide>.video-playing>img {
+        display: none
+    }
+    
+    .blueimp-gallery>.slides>.slide>.video-content>video {
+        display: none
+    }
+    
+    .blueimp-gallery>.slides>.slide>.video-playing>video {
+        display: block
+    }
+    
+    .blueimp-gallery>.slides>.slide>.video-loading>a {
+        background: url(/public/images/1/imgloading.gif) center no-repeat;
+        background-size: 64px 64px
+    }
+    
+    body:last-child .blueimp-gallery>.slides>.slide>.video-content:not(.video-loading)>a {
+        background-image: url(/public/images/1/imgvideo-play.svg)
+    }
+    
+    *+html .blueimp-gallery>.slides>.slide>.video-content {
+        height: 100%
+    }
+    
+    *+html .blueimp-gallery>.slides>.slide>.video-content>a {
+        left: 50%;
+        margin-left: -64px
+    }
+    /*			@charset "UTF-8";*/
+    /*
+			 * blueimp Gallery Indicator CSS 1.1.0
+			 * https://github.com/blueimp/Gallery
+			 *
+			 * Copyright 2013, Sebastian Tschan
+			 * https://blueimp.net
+			 *
+			 * Licensed under the MIT license:
+			 * http://www.opensource.org/licenses/MIT
+			 */
+    
+    .blueimp-gallery > .indicator {
+        position: absolute;
+        top: auto;
+        right: 15px;
+        bottom: 15px;
+        left: 15px;
+        margin: 0 40px;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        line-height: 10px;
+    }
+    
+    .blueimp-gallery > .indicator > li {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        margin: 6px 3px 0 3px;
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        border: 1px solid transparent;
+        background: #ccc;
+        background: rgba(255, 255, 255, 0.25) center no-repeat;
+        border-radius: 10px;
+        box-shadow: 0 0 2px #000;
+        opacity: 0.5;
+        cursor: pointer;
+    }
+    
+    .blueimp-gallery > .indicator > li:hover,
+    .blueimp-gallery > .indicator > .active {
+        background-color: #fff;
+        border-color: #fff;
+        opacity: 1;
+    }
+    
+    .blueimp-gallery-controls > .indicator {
+        display: block;
+        /* Fix z-index issues (controls behind slide element) on Android: */
+        -webkit-transform: translateZ(0);
+        -moz-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        -o-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+    
+    .blueimp-gallery-single > .indicator {
+        display: none;
+    }
+    
+    .blueimp-gallery > .indicator {
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    /* IE7 fixes */
+    
+    *+html .blueimp-gallery > .indicator > li {
+        display: inline;
+    }
+    /*by wtp*/
+    
+    a.abtn {
+        outline: none;
+        /*blr:expression(this.onFocus=this.blur());*/
+        display: block;
+        height: 94px;
+        width: 25px;
+        margin-top: 8px;
+        overflow: hidden;
+        background: url(/img/arrow.png) no-repeat 0px 50%;
+        background-position: -51px -24px;
+    }
+    
+    a.aleft {
+        float: left;
+        margin-top: 50px;
+    }
+    
+    a.agrayleft {
+        cursor: default;
+        background-position: -1px -24px;
+    }
+    
+    a.aright {
+        float: right;
+        margin-top: 50px;
+        background-position: -76px -18px;
+    }
+    
+    a.agrayright {
+        cursor: default;
+        background-position: -26px -24px;
+        float: right;
+    }
+    
+    .scrolllist {
+        width: 934px;
+        height: 126px;
+        margin: 30px auto 20px auto;
+    }
+    
+    .scrolllist .imglist_w {
+        width: 840px;
+        height: 117px;
+        overflow: hidden;
+        float: left;
+        position: relative;
+    }
+    
+    .scrolllist .imglist_w li {
+        width: 210px;
+        float: left;
+    }
+    
+    .scrolllist .imglist_w li img {
+        border: solid 1px #ddd;
+    }
+    
+    .scrolllist .imglist_w li a {
+        color: #3366cc;
+        text-decoration: none;
+        float: left;
+        text-align: center;
+    }
+    
+    .scrolllist .imglist_w li a:hover img {
+        filter: alpha(opacity=86);
+        -moz-opacity: 0.86;
+        opacity: 0.86;
+    }
+    .i_banner{width: 100%;height: 241px;overflow: hidden;}
+	.ibanner_img{background: url(img/zizhi.jpg) no-repeat center center;width: 100%;height: 141px;margin-top: 100px;}
+	.about_items{overflow: hidden;margin-bottom: 60px;}
+    .about_items li{float: left;width: 375px;padding: 60px 24px 0 24px;text-align: center;}
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header_nav">
+            <div class="header_logo">
+                <a href="index.html"><img src="img/logo_tips.png" /></a>
+            </div>
+            <div class="header_nav_img">
+                <a href="http://weibo.com/szshengzhibao" target="_blank" class="szb_png png2"></a>
+                <a class="szb_png png3" id="gzhwx">
+                    <div class="weixingzh">
+                        <div class="wxgzh"></div>
+                        <div class="wxwz">
+                            关注微信公众号联系客服：
+                            <br/><span>szshengzhibao</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <ul class="header_nav_link">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="guarantee.html">安全保障</a></li>
+                <li><a href="about_we.html">关于我们</a></li>
+                <li class="active" id="header_bar_c"><a href="find_us.html">联系我们</a></li>
+            </ul>
+            <div id="header_bar" class="header_bar"></div>
+        </div>
+    </div>
+    <div class="i_banner">
+        <div class="ibanner_img"></div>
+    </div>
+    <div class="atf_con">
+        <div class="atf_container">
+            <ul class="left_menu">
+                <li><a href="about_we.html">关于我们</a></li>
+                <li class="active_about"><a href="identity.html">公司资质</a></li>
+                <li><a href="about_news.html">公司资讯</a></li>
+                <li><a href="team_us.html">合作伙伴</a></li>
+                <li><a href="find_us.html">联系我们</a></li>
+            </ul>
+            <div class="fright_con">
+                <ul class="about_items" id="about_items">
+                    <li>
+                        <a class="fancybox-buttons" data-fancybox-group="button" href="img/identity/1.jpg">
+                            <img src="img/identity/1.jpg" style="height: 282px;" />
+                        </a>
+                    </li>
+                    <li>
+                        <a class="fancybox-buttons" data-fancybox-group="button" href="img/identity/2.jpg">
+                            <img src="img/identity/2.jpg" style="height: 282px;" />
+                        </a>
+                    </li>
+                    <li>
+                        <a class="fancybox-buttons" data-fancybox-group="button" href="img/identity/3.jpg">
+                            <img src="img/identity/3.jpg" style="height: 282px;" />
+                        </a>
+                    </li>
+                    <li>
+                        <a class="fancybox-buttons" data-fancybox-group="button" href="img/identity/4.jpg">
+                            <img src="img/identity/4.jpg" style="height: 282px;" />
+                        </a>
+                    </li>                    
+                    <li>
+                        <a class="fancybox-buttons" data-fancybox-group="button" href="img/identity/5.jpg">
+                            <img src="img/identity/5.jpg" style="height: 282px;" />
+                        </a>
+                    </li>
+                    <li>
+                        <a class="fancybox-buttons" data-fancybox-group="button" href="img/identity/6.jpg">
+                            <img src="img/identity/6.jpg" style="height: 282px;" />
+                        </a>
+                    </li>                    
+                    <li>
+                        <a class="fancybox-buttons" data-fancybox-group="button" href="img/identity/7.jpg">
+                            <img src="img/identity/7.jpg" style="height: 282px;" />
+                        </a>
+                    </li>                   
+                     <li>
+                        <a class="fancybox-buttons" data-fancybox-group="button" href="img/identity/8.jpg">
+                            <img src="img/identity/8.jpg" style="height: 282px;" />
+                        </a>
+                    </li>                    
+                    <li>
+                        <a class="fancybox-buttons" data-fancybox-group="button" href="img/identity/9.jpg">
+                            <img src="img/identity/9.jpg" style="height: 282px;" />
+                        </a>
+                    </li>                    
+                    <li>
+                        <a class="fancybox-buttons" data-fancybox-group="button" href="img/identity/10.jpg">
+                            <img src="img/identity/10.jpg" style="height: 282px;" />
+                        </a>
+                    </li>                    
+                    <li>
+                        <a class="fancybox-buttons" data-fancybox-group="button" href="img/identity/11.jpg">
+                            <img src="img/identity/11.jpg" style="height: 282px;" />
+                        </a>
+                    </li>                    
+                    <li>
+                        <a class="fancybox-buttons" data-fancybox-group="button" href="img/identity/12.jpg">
+                            <img src="img/identity/12.jpg" style="height: 282px;" />
+                        </a>
+                    </li>                    
+                    <li>
+                        <a class="fancybox-buttons" data-fancybox-group="button" href="img/identity/13.jpg">
+                            <img src="img/identity/13.jpg" style="height: 282px;" />
+                        </a>
+                    </li>                   
+                     <li>
+                        <a class="fancybox-buttons" data-fancybox-group="button" href="img/identity/14.jpg">
+                            <img src="img/identity/14.jpg" style="height: 282px;" />
+                        </a>
+                    </li>                     
+                    <li>
+                        <a class="fancybox-buttons" data-fancybox-group="button" href="img/identity/15.jpg">
+                            <img src="img/identity/15.jpg" style="height: 282px;" />
+                        </a>
+                    </li>
+                    <li>
+                        <a class="fancybox-buttons" data-fancybox-group="button" href="img/identity/16.jpg">
+                            <img src="img/identity/16.jpg" style="height: 282px;" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="footer">
+        <div class="phoneme">
+            <h1><i class="szb_png phone"></i>4006-986-983</h1>
+            <p>工作日9:30-18:00（法定节假日除外）</p>
+        </div>
+        <div class="callus">
+            <a href="about_we.html">公司简介</a> &nbsp; | &nbsp; <a href="about_we.html">关于我们 </a> &nbsp; | &nbsp; <a href="find_us.html">联系我们 </a> &nbsp; | &nbsp; 客服邮箱：cs@shengzhibao.com
+            <br />
+            <span>Copyright&copy;2015 深圳市前海升值宝金融信息服务有限公司  <a href="http://www.miitbeian.gov.cn" target="_blank">粤ICP备15078830号-1</a></span>
+        </div>
+        <div class="safety">
+            <a href="http://szcert.ebs.org.cn/81e87cd1-7622-4970-8a8b-1a1a66b3ba2d" target="_blank" class="szb_png safe1"></a>
+            <a href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action" target="_blank" class="szb_png safe2"></a>
+            <a href="https://credit.cecdc.com/CX20160927026128581682.html" target="_blank"  class="szb_png safe5"></a>
+            <a href="https://ss.knet.cn/verifyseal.dll?sn=e16092844030064776qqdw000000&comefrom=trust&trustKey=dn&trustValue=shengzhibao.com" target="_blank" class="szb_png safe6"></a>
+            <a href="http://www.12377.cn/" target="_blank" class="szb_png safe3"></a>
+            <a href="https://v.pinpaibao.com.cn/authenticate/cert/?site=www.shengzhibao.com&at=business" target="_blank" class="szb_png safe4"></a>
+        </div>
+    </div>
+    <div class="totop">
+        <div class="totop_img">
+            <img src="img/bottom.png" usemap="#totop" alt="回到顶部" />
+            <map name="totop">
+                <area shape="poly" coords="1150,14,1124,42,1179,42" href="javascript:totopfun()">
+            </map>
+            <a class="szb_png png4" id="dwxkf">
+                <div class="kuang_png kuang">
+                    <div class="dwxkefu"></div>
+                    <div class="wxwz">
+                        关注微信公众号联系客服：
+                        <br/><span>szshengzhibao</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div id="blueimp-gallery" class="blueimp-gallery" style="display:none;">
+        <div class="slides"></div>
+        <h3 class="title"></h3>
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="close">×</a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
+    </div>
+    <script src="https://s4.cnzz.com/z_stat.php?id=1260008208&web_id=1260008208" language="JavaScript"></script>
+    <script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/common.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/gellary.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+    var guarSlide = document.getElementById("about_items");
+    guarSlide && (guarSlide.onclick = function(event) {
+            event = event || window.event;
+            var target = event.target || event.srcElement,
+                link = target.src ? target.parentNode : target,
+                options = {
+                    index: link,
+                    event: event
+                },
+                links = this.getElementsByTagName("a");
+            if (options.index.tagName == "A" ){blueimp.Gallery(links, options);}
+            
+        })
+    </script>
+</body>
+
+</html>

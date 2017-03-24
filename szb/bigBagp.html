@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="keywords" content="升值宝" />
+    	<meta name="description" content="升值宝" />
+		<title>升值宝-理财好,升值宝！</title>
+		<link rel="shortcut icon" type="image/png" href="img/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<script type="text/javascript">
+			(function() {
+				if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+					window.location.href = "static/link_app.html";
+				}
+			})();
+		</script>
+		<style type="text/css">
+			@-webkit-keyframes scaleout {
+			    0% { -webkit-transform: scale(1.0) }
+			    100% {
+			        -webkit-transform: scale(1.1,1.1);
+			        opacity: 0;
+			    }
+			}
+			@keyframes scaleout {
+			    0% {
+			        transform: scale(1.0);
+			        -webkit-transform: scale(1.0);
+			    } 100% {
+			          transform: scale(1.1,1.1);
+			          -webkit-transform: scale(1.1,1.1);
+			          opacity: 0;
+			      }
+			}
+			@-webkit-keyframes zoomIn {
+			  from {
+			    -webkit-transform: scale3d(.3, .3, .3);
+			    transform: scale3d(.3, .3, .3);
+			  }
+			}
+
+			@keyframes zoomIn {
+			  from {
+			    -webkit-transform: scale3d(.3, .3, .3);
+			    transform: scale3d(.3, .3, .3);
+			  }
+			}
+
+			@-webkit-keyframes overturn {
+			  from {
+			  	transform: rotateY(0deg);
+				-webkit-transform: rotateY(0deg);
+			  }
+			  to{
+			    transform: rotateY(360deg);
+				-webkit-transform: rotateY(360deg);
+				}
+			}
+
+			@keyframes overturn {
+			  from {
+			  	transform: rotateY(0deg);
+				-webkit-transform: rotateY(0deg);
+			  }
+			  to{
+				transform: rotateY(360deg);
+				-webkit-transform: rotateY(360deg);
+				}
+			}
+
+
+		    @-webkit-keyframes pulse {
+			  from {
+			    -webkit-transform: scale3d(1, 1, 1);
+			    transform: scale3d(1, 1, 1);
+			  }
+
+			  50% {
+			    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+			    transform: scale3d(1.05, 1.05, 1.05);
+			  }
+
+			  to {
+			    -webkit-transform: scale3d(1, 1, 1);
+			    transform: scale3d(1, 1, 1);
+			  }
+			}
+
+			@keyframes pulse {
+			  from {
+			    -webkit-transform: scale3d(1, 1, 1);
+			    transform: scale3d(1, 1, 1);
+			  }
+
+			  50% {
+			    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+			    transform: scale3d(1.05, 1.05, 1.05);
+			  }
+
+			  to {
+			    -webkit-transform: scale3d(1, 1, 1);
+			    transform: scale3d(1, 1, 1);
+			  }
+			}
+
+			.pulse {-webkit-animation: pulse 0.6s infinite ease-in-out;animation: pulse 0.6s infinite ease-in-out;}
+			.big1{position: relative;height:523px;background: url(img/big118/1.jpg) no-repeat center center;width: 100%;}
+			.big2{position: relative;height:482px;background: url(img/big118/2.jpg) no-repeat center center;width: 100%;}
+			.open{position: relative;width: 1200px;height: 0;margin: 0 auto;}
+			.openxz{position: absolute;width: 159px;height: 159px;top: 92px;left: 520px;}
+			.obtn{position: absolute;width: 200px;height: 200px;top: 73px;left: 500px;}
+
+			.open1{position: relative;height:554px;background: url(img/big118/o1.jpg) no-repeat center center;width: 100%;}
+			.open2{position: relative;height:451px;}
+			.box{position:absolute;width:100%;}
+			.b2{height:451px;background: url(img/big118/o2.jpg) no-repeat center center;width: 100%;}
+
+			.animbg{position:absolute;top:0px;left:50%;margin-left:-293px; background: url(img/big118/anib.png) no-repeat center center;background-size: 100%; width: 586px;height: 380px;transition: all 0.8s ease-in-out; -webkit-transition: all 0.8s ease-in-out;font-size: 90px;color: #ff9639;text-align: center;}
+    		.animbg p{padding-top: 120px;}
+    		.animbg p strong{font-size: 108px;}
+			.opbtn{position: absolute;left: 50%;margin-left: -224px; top: 80px; width: 447px;height: 84px;}
+			.opbg{position: absolute;top: -1px; width: 100%;height: 14.404rem;}
+
+
+			.rule{width: 1200px;margin: 40px auto 60px;}
+			.rule p{font-size: 20px;line-height: 50px;color: #797979;padding-left: 40px;}
+
+			.layout{position: absolute;background: #000000;z-index: 100;top: 0; left: 0;display: none;filter:Alpha(opacity=60); -moz-opacity:0.6;opacity:0.6;}
+			.tips{margin-left: -253px;margin-top: -340px; color:#6a6a6a;left:50%;top:50%;width:506px;height:679px;background-color:transparent;position:fixed;z-index:1000;}
+			.close{position: absolute;top: 20px;right: 55px;display: block;width: 40px;height: 40px;}
+			.tipsopen{position: absolute;top: 85px;left: 128px;display: block;width: 192px;height: 192px;}
+			.tipsopenz{position: absolute;top: 110px;left: 153px;display: block;width:242px;height:242px;}
+			.disnone{display: none;}
+
+			/* 注册 */
+			.register{margin-left: -291px;margin-top: -305px; color:#6a6a6a;left:50%;top:50%;width:582px;height:610px;background-color:transparent;position:fixed;z-index:1000;}
+			.mobile{position: absolute;top: 220px; left: 155px;}
+			#mobile{width: 370px; height: 66px;font-size: 21px;line-height: 26px; padding: 20px 0; border: 0;background: transparent; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+			.invitecode{position: relative;height:90px;background: url(img/big118/r2.png) no-repeat center center;width: 100%;}
+			#inviteCode{position: absolute;left: 155px; width: 270px; height: 66px;font-size: 21px;line-height: 26px; padding: 20px 0; border: 0;background: transparent; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+			.tipsyqm{position: absolute; right: 59px; font-size: 21px; line-height: 66px;}
+			.rok{position: relative;height:121px;background: url(img/big118/r3.png) no-repeat center center;width: 100%;text-align: center;}
+			.rbtn{display: inline-block;width: 513px;height: 70px;}
+			/* 图形验证码 */
+			.imgcodebox{margin-left: -291px;margin-top: -305px; color:#6a6a6a;left:50%;top:50%;width:582px;height:610px;background-color:transparent;position:fixed;z-index:1000;}
+			.imgcode{position: relative;height:90px;background: url(img/big118/c1.png) no-repeat center center;width: 100%;}
+			.gotimg{float: right;width: 175px;height: 66px;margin-right: 35px;}
+			.imgcode input{float: left; margin-left:145px; width: 210px; height: 66px;font-size: 21px;line-height: 26px; padding: 20px 0; border: 0;background: transparent; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+			/* 注册完成 */
+			.registerok{margin-left: -288px;margin-top: -256px; color:#6a6a6a;left:50%;top:50%;width:577px;height:513px;background-color:transparent;position:fixed;z-index:1000;background: url(img/big118/rb.png) no-repeat center center;}
+			.rtips{margin-top: 230px;margin-left: 54px;margin-bottom: 30px;}
+			.rtips p{font-size: 24px;line-height: 48px; color: #6d6c6c;}
+			.rtips p span{color: #ff9639;font-size: 31px;}
+			/* CSS动画 */
+			.overturn{-webkit-animation: overturn 1.6s ease-in-out;animation: overturn 1.6s ease-in-out; -ms-animation: overturn 1.6s ease-in-out;}
+			.ani{-webkit-animation: scaleout 1.3s infinite ease-in-out;animation: scaleout 1.3s infinite ease-in-out;}		
+			.zoomIn{-webkit-animation: zoomIn 0.3s ease-in-out;animation: zoomIn 0.3s ease-in-out;}
+			.show{-webkit-transform: translate3d(0, -380px, 0); transform: translate3d(0, -380px, 0); }
+		</style>
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="header_nav">
+				<div class="header_logo">
+					<a href="index.html"><img src="img/logo_tips.png"/></a>
+				</div>
+				<div class="header_nav_img">
+					<a href="http://weibo.com/szshengzhibao" target="_blank" class="szb_png png2 png2i"></a>
+					<a class="szb_png png3 png3i" id="gzhwx">
+						<div class="weixingzh">
+							<div class="wxgzh"></div>
+							<div class="wxwz">
+								关注微信公众号联系客服：<br/><span>szshengzhibao</span>
+							</div>
+						</div>
+					</a>
+				</div>
+				<ul class="header_nav_link">
+					<li class="active" id="header_bar_c"><a href="index.html">首页</a></li>
+					<li><a href="guarantee.html">安全保障</a></li>
+					<li><a href="about_we.html">关于我们</a></li>
+					<li><a href="find_us.html">联系我们</a></li>
+				</ul>
+				<div id="header_bar" class="header_bar"></div>
+			</div>
+		</div>
+		<div class="bigm" style="display: none;">
+			<div class="big1"></div>
+			<div class="big2">
+				<div class="open">
+					<a href="javascript:void(0);" class="openxz pulse"><img src="img/big118/3.png"></a>
+					<a href="javascript:void(0);" class="obtn ani"><img src="img/big118/4.png"></a>
+				</div>
+			</div>
+		</div>
+		<div class="mainopen">
+			<div class="open1"></div>
+			<div class="open2">
+				<div class="animbg">
+					<p><strong id="howm">28</strong>元</p>
+				</div>
+				<div class="box">
+					<div class="b2"></div>
+				</div>
+				<a href="bagRegister.html" class="opbtn pulse"><img src="img/big118/l.png"></a>
+			</div>
+		</div>	
+		<div class="rule">
+			<p>1、该活动只针对新注册用户；</p>
+			<p>2、每人只能领取一次，领取的红包将计入您的升值宝账户；</p>
+			<p>3、新注册用户首次投资金额大于等于100元并持有7天以上，红包可投资可提现；</p>
+			<p>4、参与活动的新用户可发出一个888元现金红包；</p>
+			<p>5、本活动最终解释权归升值宝所有。</p>
+		</div>
+		
+		
+		<div class="footer" style="height:360px;">
+			<div class="phoneme">
+				<h1><i class="szb_png phone"></i>4006-986-983</h1>
+				<p>工作日9:30-18:00（法定节假日除外）</p>
+			</div>
+			<div class="callus">
+				<a href="about_we.html">公司简介</a> &nbsp; | &nbsp; <a href="about_we.html">关于我们 </a> &nbsp; | &nbsp; <a href="find_us.html">联系我们 </a> &nbsp; | &nbsp; 客服邮箱：cs@shengzhibao.com<br />
+				<span>Copyright&copy;2015 深圳市前海升值宝金融信息服务有限公司  <a href="http://www.miitbeian.gov.cn" target="_blank">粤ICP备15078830号-1</a></span>
+			</div>
+			<div class="safety">
+				<a href="http://szcert.ebs.org.cn/81e87cd1-7622-4970-8a8b-1a1a66b3ba2d" target="_blank" class="szb_png safe1"></a>
+				<a href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action" target="_blank" class="szb_png safe2"></a>
+				<a href="https://credit.cecdc.com/CX20160927026128581682.html" target="_blank"  class="szb_png safe5"></a>
+				<a href="https://ss.knet.cn/verifyseal.dll?sn=e16092844030064776qqdw000000&comefrom=trust&trustKey=dn&trustValue=shengzhibao.com" target="_blank" class="szb_png safe6"></a>
+				<a href="http://www.12377.cn/" target="_blank" class="szb_png safe3"></a>
+				<a href="https://v.pinpaibao.com.cn/authenticate/cert/?site=www.shengzhibao.com&at=business" target="_blank" class="szb_png safe4"></a>
+			</div>
+		</div>
+		<div class="tips disnone">
+			<img src="img/big118/tbg.png" class="bigbg">
+			<a href="javascript:closealert('.tips');" class="close"><img src="img/big118/x.png"></a>
+			<a href="javascript:void(0);" class="tipsopenz pulse" id="tipsattr"><img src="img/big118/xz.png"></a>
+			<a href="javascript:void(0);" class="tipsopen ani"><img src="img/big118/tcircle.png"></a>
+		</div>
+		<div class="register disnone">
+			<img src="img/big118/r1.png">
+			<div class="mobile">
+				<input type="text" name="" maxlength="11" placeholder="请输入您的手机号码" id="mobile" onkeyup="value=value.replace(/[^\d]/g,'')">
+			</div>
+			<div class="invitecode">
+				<input type="text" name="" placeholder="请输入邀请码，如无可留空" id="inviteCode" onkeyup="value=value.replace(/[^0-9a-zA-Z]*$/g,'')" maxlength="6" spellcheck="false">
+				<span class="tipsyqm">邀请码</span>
+			</div>
+			<div class="rok">
+				<a href="" class="rbtn"><img src="img/big118/r4.png"></a>
+			</div>
+		</div>
+		<div class="imgcodebox">
+			<img src="img/big118/c.png">
+			<div class="imgcode">
+			 	<a  href="javascript:changeImage();" class="gotimg"><img src="#" class="img_cl" style="width: 85%; margin-top: 8px;"></a>
+			 	<input type="text" name="" placeholder="请输入图形验证码" id="imageCode" maxlength="4" spellcheck="false">
+			</div>
+			<div class="rok">
+				<a href="" class="rbtn"><img src="img/big118/r4.png"></a>
+			</div>
+		</div>
+		<div class="registerok">
+			<div class="rtips">
+				<p>您已成功领取<span>28元</span> 现金红包!</p>
+				<p>您的登录账号为 : <span>13430685558</span></p>
+				<p>现在就去下载并使用吧！</p>
+			</div>
+			<div class="rok">
+				<a href="" class="rbtn pulse"><img src="img/big118/rok.png"></a>
+			</div>
+		</div>
+		<div class="layout disnone"></div>
+		<script src="https://s4.cnzz.com/z_stat.php?id=1260008208&web_id=1260008208" language="JavaScript"></script>  
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+					$(".animbg").addClass("show");
+
+			var cookie = {
+				set: function(key, val, time) {
+					var date = new Date();
+					var expiresDays = time;
+					date.setTime(date.getTime() + expiresDays * 24 * 3600 * 1000);
+					document.cookie = key + "=" + val + ";expires=" + date.toGMTString();
+				},
+				get: function(key) {
+					var getCookie = document.cookie.replace(/[ ]/g, "");
+					var arrCookie = getCookie.split(";");
+					var tips;
+					for (var i = 0; i < arrCookie.length; i++) { 
+						var arr = arrCookie[i].split("="); 
+						if (key == arr[0]) { 
+							tips = arr[1];
+							break;
+						}
+					}
+					console.log(tips);
+					return tips;
+				}
+			}
+
+			$(function() {
+				if (cookie.get("redpacketAmount") != undefined) {
+					$("#howm").html(cookie.get("redpacketAmount"));
+					$(".opbtn").attr("href", "bagRegister.html"+param+"&redpacketAmount="+cookie.get("redpacketAmount"));
+					$(".main").hide();
+					$(".mainopen").show();
+					$(".animbg").addClass("show");
+				}else{
+					$(".tips").addClass("zoomIn");
+					loadalert(".tips");
+				}
+			})
+			$(".ani").click(function(){
+				$(this).prev().removeClass("pulse");
+				that = this;
+				setTimeout(function(){
+					$(that).prev().addClass("overturn");
+					setTimeout(function(){
+						if(!$(".tips").is(":hidden")){
+							$(".layout").hide();
+							$(".tips").hide();
+						}
+						openrp();
+						$(".main").hide();
+						$(".mainopen").show();
+						$(".animbg").addClass("show");
+						// location.replace("bigOpen.html"+param);
+					},1600);
+				},100);
+			})
+
+			function loadalert(t, type) {
+				var W = $(window).width();
+				var H = $(document).height();
+				$(".layout").css({
+					"width": W + "px",
+					"height": H + "px"
+				}).show();
+				$(t).show();
+			}
+			function closealert(t){
+				$(".layout").hide();
+				$(t).hide();
+			}
+
+			// 拆红包
+			var markopen = false;
+			function openrp() {
+				if (markopen) {
+					return;
+				}
+				markopen = true;
+				$.ajax({
+					type: "get",
+					url: "/szb/frontReward/web/snatchRedpacket?rewardType=redpacket&rewardCode=QHB118&source="+source,
+					async: true,
+					dataType: "json",
+					success: function(data) {
+						if (data.code == 1000) {
+							deadtime = 120;
+							var expireTime = new Date(data.expireTime.replace(/-/g, '/')).getTime();
+							cookie.set("redpacketAmount", data.redpacketAmount, 1 / 24 / 3600 * deadtime);
+							cookie.set("expireTime", expireTime, 1 / 24 / 3600 * deadtime);
+							cookie.set("snatchId", data.snatchId, 1 / 24 / 3600 * deadtime);
+							cookie.set("redpacketExp", data.redpacketExp, 1 / 24 / 3600 * deadtime);
+							$("#howm").html(data.redpacketAmount);
+							$(".opbtn").attr("href", "bagRegister.html"+param+"&redpacketAmount="+data.redpacketAmount);
+						} else if (data.msg == "红包已经被抢光") {
+							alertTips("红包已经被抢光!");
+						} else {
+							alertTips("打开红包失败！");
+						}
+						markopen = false;
+					}
+				});
+			}
+
+			function getQueryString(name) {
+				var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+				var r = window.location.search.substr(1).match(reg);
+				if (r != null) return decodeURIComponent(r[2]);
+				return null;
+			}
+
+			function alertTips(str,ind) {
+		        $('.tips span').html(str);
+		        $('.tips').show();
+		        setTimeout(function() {
+		        	s1 = false;
+		            $('.tips').hide();
+		        }, 2000);
+		    }
+
+			</script>
+	</body>
+</html>

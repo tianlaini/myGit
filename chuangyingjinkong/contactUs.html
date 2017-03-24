@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="keywords" content="创盈金控" />
+    	<meta name="description" content="创盈金控" />
+		<title>创盈金控-创意无限，携手共盈！</title>
+		<link rel="shortcut icon" type="image/png" href="img/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="header">
+				<div class="header_nav">
+					<div class="header_logo">
+						<a href="index.html"><img src="img/index0_02.jpg"/></a>
+					</div>
+					<ul class="header_nav_link">
+						<li><a href="index.html">首页</a></li>
+						<li><a href="idea.html">企业文化</a></li>
+						<li><a href="aboutUs.html">关于我们</a></li>
+						<li class="active" id="header_bar_c"><a href="contactUs.html">联系我们</a></li>
+					</ul>
+					<div id="header_bar" class="header_bar"></div>
+				</div>
+			</div>
+			<!-- <div class="main"> -->
+			<!-- <embed width="700" height="500" allowscriptaccess="never" allownetworking="none" src="http://nitrome.com.4399.com:8080/4399swf//upload_swf/ftp/20090603/1.swf"> -->
+			<div class="main" id="bcontent">
+				<div style="background:url(img/summaryBg.jpg) no-repeat center;height:100%;" id="bottomTap1">
+					<div class="youposition">
+						<img src="img/aboutFont.png" class="aboutFont">
+						<p class="gowhere">首页/关于我们/关于我们</p>
+					</div>
+					<div class="contactBox">
+						<div class="contactl"><img src="img/contactUs.jpg" alt=""></div>
+						<div class="contactf">
+							<h1>深圳市创盈金融控股有限公司</h1>
+							<div class="contactitem">
+								<i class="contactitem1"></i>
+								<div class="contactitemcontent">
+									<p class="contactitemkey">公司地址</p>
+									<p class="contactitemval">深圳市罗湖区梨园路6号物资控股大厦19楼</p>
+								</div>
+							</div>
+							<div class="contactitem">
+								<i class="contactitem2"></i>
+								<div class="contactitemcontent">
+									<p class="contactitemkey">联系电话</p>
+									<p class="contactitemval">4006-150-140</p>
+								</div>
+							</div>
+							<div class="contactitem">
+								<i class="contactitem3"></i>
+								<div class="contactitemcontent">
+									<p class="contactitemkey">E-MAIL</p>
+									<p class="contactitemval">cs@chuangyingjinkong.com</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				Copyright&copy;2014 www.chuangyingjinkong.com All rights reserved 深圳市创盈金融控股有限公司 版权所有 <a href="http://www.miitbeian.gov.cn" target="_blank">粤ICP备15078830号-1</a>
+			</div>
+		</div>	
+		
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.tinyscrollbar.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script> 
+			$(function(){
+			    $(window).resize({
+			        delay: 10
+			    }, function(){   
+			        fixScreen();
+			    });
+			    fixScreen();
+			    function fixScreen(){
+		            // var screenWd = $("body").width();  
+		            var screenHd = $("body").height();
+		            console.log(screenHd);
+		            $(".main").css("height",screenHd-$(".header").height()-$(".footer").height());
+		            // var point = screenWd/screenHd;
+		            // if(point>1920/1080){  /*缩放宽度太宽 高度不够*/
+		            //     var scalHeight =screenWd*1080/1920;  /*根据缩放宽度，找出新高度，根据新高度，找出新宽度*/
+		            //     var newWidth = scalHeight*1920/1080;
+		            //     $(".resizeArea,.scaleBg").css({width: newWidth, marginLeft: -newWidth/2,position:"absolute",left:"50%"}); 
+		            // }else{   /*缩放高度太高，宽度不够*/
+		            //     var scalWidth = screenHd*1920/1080;
+		            //     $(".resizeArea,.scaleBg").css({width: scalWidth, marginLeft: -scalWidth/2,position:"absolute",left:"50%"}); 
+		            // }
+		        }
+			})  
+		</script>
+	</body>
+</html>

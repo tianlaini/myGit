@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>升值宝_关于我们</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/kkpager_orange.css" />
+</head>
+
+<body>
+    <div class="header">
+        <div class="header_nav">
+            <div class="header_logo">
+                <a href="index.html"><img src="img/logo_tips.png" /></a>
+            </div>
+            <div class="header_nav_img">
+                <a href="http://weibo.com/szshengzhibao" target="_blank" class="szb_png png2"></a>
+                <a class="szb_png png3" id="gzhwx">
+                    <div class="weixingzh">
+                        <div class="wxgzh"></div>
+                        <div class="wxwz">
+                            关注微信公众号联系客服：<br/><span>szshengzhibao</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <ul class="header_nav_link">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="guarantee.html">安全保障</a></li>
+                <li class="active" id="header_bar_c"><a href="about_we.html">关于我们</a></li>
+                <li><a href="find_us.html">联系我们</a></li>
+            </ul>
+            <div id="header_bar" class="header_bar"></div>
+        </div>
+    </div>
+    <div class="about_banner">
+        <div class="aboutnews_img"></div>
+    </div>
+    <div class="atf_con">
+        <div class="atf_container">
+            <ul class="left_menu">
+                <li><a href="about_we.html">关于我们</a></li>
+                <li><a href="identity.html">公司资质</a></li>
+                <li class="active_about"><a href="about_news.html">公司资讯</a></li>
+                <li><a href="team_us.html">合作伙伴</a></li>
+                <li><a href="find_us.html">联系我们</a></li>
+            </ul>
+            <div class="aright_con">
+                <ul id="news" style="margin-top:60px;">
+                </ul>
+                <div id="kkpager"></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="phoneme">
+            <h1><i class="szb_png phone"></i>4006-986-983</h1>
+            <p>工作日9:30-18:00（法定节假日除外）</p>
+        </div>
+        <div class="callus">
+            <a href="about_we.html">公司简介</a> &nbsp; | &nbsp; <a href="about_we.html">关于我们 </a> &nbsp; | &nbsp; <a href="find_us.html">联系我们 </a> &nbsp; | &nbsp; 客服邮箱：cs@shengzhibao.com
+            <br />
+            <span>Copyright&copy;2015 深圳市前海升值宝金融信息服务有限公司  <a href="http://www.miitbeian.gov.cn" target="_blank">粤ICP备15078830号-1</a></span>
+        </div>
+        <div class="safety">
+            <a href="http://szcert.ebs.org.cn/81e87cd1-7622-4970-8a8b-1a1a66b3ba2d" target="_blank" class="szb_png safe1"></a>
+            <a href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action" target="_blank" class="szb_png safe2"></a>
+            <a href="https://credit.cecdc.com/CX20160927026128581682.html" target="_blank"  class="szb_png safe5"></a>
+            <a href="https://ss.knet.cn/verifyseal.dll?sn=e16092844030064776qqdw000000&comefrom=trust&trustKey=dn&trustValue=shengzhibao.com" target="_blank" class="szb_png safe6"></a>
+            <a href="http://www.12377.cn/" target="_blank" class="szb_png safe3"></a>
+            <a href="https://v.pinpaibao.com.cn/authenticate/cert/?site=www.shengzhibao.com&at=business" target="_blank" class="szb_png safe4"></a>
+        </div>
+    </div>
+    <div class="totop">
+        <div class="totop_img">
+            <img src="img/bottom.png" usemap="#totop" alt="回到顶部" />
+            <map name="totop">
+                <area shape="poly" coords="1150,14,1124,42,1179,42" href="javascript:totopfun()">
+            </map>
+            <a class="szb_png png4" id="dwxkf">
+                <div class="kuang_png kuang">
+                    <div class="dwxkefu"></div>
+                    <div class="wxwz">
+                        关注微信公众号联系客服：<br/><span>szshengzhibao</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <script src="https://s4.cnzz.com/z_stat.php?id=1260008208&web_id=1260008208" language="JavaScript"></script>    
+    <script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/common.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/kkpager.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    var cookie = {
+        set: function(key, val) { 
+            document.cookie = key + "=" + val; 
+        },
+        get: function(key) { 
+            
+            var getCookie = document.cookie.replace(/[ ]/g, ""); 
+            var arrCookie = getCookie.split(";") 
+            var tips;
+            for (var i = 0; i < arrCookie.length; i++) { 
+                var arr = arrCookie[i].split("="); 
+                if (key == arr[0]) { 
+                    tips = arr[1]; 
+                    break;
+                }
+            }
+            return tips;
+        }
+    }
+    Date.prototype.format = function(format) {
+        var date = {
+            "M+": this.getMonth() + 1,
+            "d+": this.getDate(),
+            "h+": this.getHours(),
+            "m+": this.getMinutes(),
+            "s+": this.getSeconds(),
+            "q+": Math.floor((this.getMonth() + 3) / 3),
+            "S+": this.getMilliseconds()
+        };
+        if (/(y+)/i.test(format)) {
+            format = format.replace(RegExp.$1, (this.getFullYear() + '').substr(4 - RegExp.$1.length));
+        }
+        for (var k in date) {
+            if (new RegExp("(" + k + ")").test(format)) {
+                format = format.replace(RegExp.$1, RegExp.$1.length == 1 ? date[k] : ("00" + date[k]).substr(("" + date[k]).length));
+            }
+        }
+        return format;
+    }
+    var n = 1;
+    $(function() {
+        if (typeof(cookie.get("news_currentpage")) != 'undefined') {
+            n = cookie.get("news_currentpage");
+        }
+
+        $.ajax({
+            url: "/szb/msg/web/news?currentPage=" + n + "&pageSize=15",
+            type: "GET",
+            success: function(data) {
+                var totalPage = data.page.totalPage;
+                var totalRecords = data.page.totalCount;
+                var pageNo = n;
+                for (var i = 0; i < data.page.result.length; i++) {
+                    var newDate = new Date();
+                    newDate.setTime(data.page.result[i].created_time);
+
+                    $("#news").append("<li class='about_news'>" + "<a href='" + "about_newsDetail.html?id=" + data.page.result[i].infoId + "'>" + "<span class='about_news_biao'>" + data.page.result[i].title + "</span><span class='about_news_date'>" + newDate.format('yyyy/MM/dd') + "</span></a></li>");
+
+                }
+                //生成分页
+                //有些参数是可选的，比如lang，若不传有默认值
+                kkpager.generPageHtml({
+                    pno: pageNo,
+                    //总页码
+                    total: totalPage,
+                    //总数据条数
+                    totalRecords: totalRecords,
+					isGoPage:false,
+                    mode: 'click', //默认值是link，可选link或者click
+                    click: function(n) {
+                        $.ajax({
+                            url: "/szb/msg/web/news?currentPage=" + n + "&pageSize=15",
+                            type: "GET",
+                            success: function(data) {
+                                $("#news").empty();
+                                var newDate = new Date();
+
+                                newDate.setTime(data.page.result[0].created_time);
+
+
+                                for (var i = 0; i < data.page.result.length; i++) {
+                                    var newDate = new Date();
+                                    newDate.setTime(data.page.result[i].created_time);
+
+                                    $("#news").append("<li class='about_news'>" + "<a href='" + "about_newsDetail.html?id=" + data.page.result[i].infoId + "'>" + "<span class='about_news_biao'>" + data.page.result[i].title + "</span><span class='about_news_date'>" + newDate.format('yyyy/MM/dd') + "</span></a></li>");
+                                }
+                            }
+
+                        });
+                        // do something
+                        //手动选中按钮
+
+                        this.selectPage(n);
+                        cookie.set("news_currentpage", n);
+                        return false;
+                    }
+                });
+
+            }
+
+        });
+
+
+    });
+    </script>
+</body>
+
+</html>

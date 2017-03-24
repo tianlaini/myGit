@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>升值宝_关于我们</title>
+		<link rel="shortcut icon" type="image/png" href="img/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/kkpager_orange.css" />
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="header_nav">
+				<div class="header_logo">
+					<a href="index.html"><img src="img/logo_tips.png" /></a>
+				</div>
+				<div class="header_nav_img">
+					<a href="http://weibo.com/szshengzhibao" target="_blank" class="szb_png png2"></a>
+					<a class="szb_png png3" id="gzhwx">
+						<div class="weixingzh">
+							<div class="wxgzh"></div>
+							<div class="wxwz">
+								关注微信公众号联系客服：<br/><span>szshengzhibao</span>
+							</div>
+						</div>
+					</a>
+				</div>
+				<ul class="header_nav_link">
+					<li><a href="index.html">首页</a></li>
+					<li><a href="guarantee.html">安全保障</a></li>
+					<li><a href="about_we.html">关于我们</a></li>
+					<li class="active" id="header_bar_c"><a href="find_us.html">联系我们</a></li>
+				</ul>
+				<div id="header_bar" class="header_bar"></div>
+			</div>
+		</div>
+		<div class="about_banner">
+			<div class="abanner_img"></div>
+		</div>
+		<div class="atf_con">
+			<div class="querytitle">
+				
+				<div class="search_input">
+					<a class="button16" href="javascript:queryinviteCode()">确认</a>
+					<span>您的推荐码：</span><input type="text" placeholder="请输入您的推荐码" class="input16 margwidth" name="tjm" id="tjm" value="" maxlength="6" onkeyup="value=value.replace(/[^0-9a-zA-Z]*$/g,'')">
+					<span>筛选日期：</span><input type="text" placeholder="请点击选择起始时间" class="input10" name="startDate" id="start" value=""/>
+					<span>至&nbsp;&nbsp;</span><input type="text" placeholder="请点击选择结束时间" class="input10" name="endDate" id="end" value=""/>
+				</div>
+			</div>
+			<div class="atf_container" style="background: #FFFFFF;">
+				<div class="querycon">
+					<div class="querytips">暂无查询记录</div>
+					<table>
+						<tbody id="showrecode">
+								
+						</tbody>
+					</table>
+					<div id="kkpager"><div><span class="pageBtnWrap"><span class="disabled">首页</span><span class="disabled">上一页</span><span class="curr">1</span><span class="disabled">下一页</span><span class="disabled">尾页</span></span><span class="infoTextAndGoPageBtnWrap"><span class="totalText">当前第<span class="currPageNum">1</span>页<span class="totalInfoSplitStr">/</span>共<span class="totalPageNum">1</span>页</span></span></div><div style="clear:both;"></div></div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="phoneme">
+				<h1><i class="szb_png phone"></i>4006-986-983</h1>
+				<p>工作日9:30-18:00（法定节假日除外）</p>
+			</div>
+			<div class="callus">
+				<a href="about_we.html">公司简介</a> &nbsp; | &nbsp; <a href="about_we.html">关于我们 </a> &nbsp; | &nbsp; <a href="find_us.html">联系我们 </a> &nbsp; | &nbsp; 客服邮箱：cs@shengzhibao.com
+				<br />
+				<span>Copyright&copy;2015 深圳市前海升值宝金融信息服务有限公司  <a href="http://www.miitbeian.gov.cn" target="_blank">粤ICP备15078830号-1</a></span>
+			</div>
+			<div class="safety">
+            	<a href="http://szcert.ebs.org.cn/81e87cd1-7622-4970-8a8b-1a1a66b3ba2d" target="_blank" class="szb_png safe1"></a>
+            	<a href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action" target="_blank" class="szb_png safe2"></a>
+            	<a href="https://credit.cecdc.com/CX20160927026128581682.html" target="_blank"  class="szb_png safe5"></a>
+            	<a href="https://ss.knet.cn/verifyseal.dll?sn=e16092844030064776qqdw000000&comefrom=trust&trustKey=dn&trustValue=shengzhibao.com" target="_blank" class="szb_png safe6"></a>
+            	<a href="http://www.12377.cn/" target="_blank" class="szb_png safe3"></a>
+            	<a href="https://v.pinpaibao.com.cn/authenticate/cert/?site=www.shengzhibao.com&at=business" target="_blank" class="szb_png safe4"></a>
+        	</div>
+		</div>
+		<div class="totop">
+			<div class="totop_img">
+				<img src="img/bottom.png" usemap="#totop" alt="回到顶部" />
+				<map name="totop">
+                <area shape="poly" coords="1150,14,1124,42,1179,42" href="javascript:totopfun()">
+            </map>
+				<a class="szb_png png4" id="dwxkf">
+					<div class="kuang_png kuang">
+						<div class="dwxkefu"></div>
+						<div class="wxwz">
+							关注微信公众号联系客服：<br/><span>szshengzhibao</span>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<script src="https://s4.cnzz.com/z_stat.php?id=1260008208&web_id=1260008208" language="JavaScript"></script>  
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/kkpager.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/laydate.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				var start = {
+					elem: '#start',
+					format: 'YYYY-MM-DD',
+					max: laydate.now(), 
+					istime: false,
+					istoday: false,
+					choose: function (datas) {
+						end.min = datas; 
+						end.start = datas 
+					}
+				};
+				var end = {
+					elem: '#end',
+					format: 'YYYY-MM-DD',
+					max: laydate.now(),
+					istime: false,
+					istoday: false,
+					choose: function (datas) {
+						start.max = datas; 
+					}
+				};
+				laydate(start);
+				laydate(end);
+			})		
+			function queryinviteCode(n){
+				var reg = /^[0-9a-zA-Z]+$/;
+				var inviteCode = $("#tjm").val();
+				var pageNo = n || 1;
+				if(inviteCode==""||inviteCode.length!=6){alert("请输入6位数的推荐码！"); return;}
+				if (!reg.test(inviteCode)) {
+					alert("推荐码只能为数字和字母！");
+					return;
+				}
+				var startDate = $("#start").val();
+				var endDate = $("#end").val();
+				$(".querytips").hide();
+				$(".querytips").html("您的推荐码："+inviteCode+" 暂无推荐信息！");
+				$.ajax({
+					type:"post",
+					url:"/szb/frontReward/web/getUserByRecommendCodeInfo?inviteCode="+inviteCode+"&startDate="+startDate+"&endDate="+endDate+"&currentPage="+pageNo+"&pageSize=10",
+					async:true,
+					dataType: "json",
+					success:function(data){
+						if (data.code == 1000) {
+							var totalPage = data.page.totalPage;
+							var totalRecords = data.page.totalCount;
+							var pageNo = data.page.nowPage;
+								var htmltr = "<tr><td class='ann_tbg'>注册时间</td><td class='ann_tbg'>电话号码</td></tr>"
+								for (var i = 0; i < data.page.result.length; i++) {							
+									htmltr +="<tr><td>"+data.page.result[i].create_time+"</td><td>"+data.page.result[i].mobile+"</td></tr>";
+								}
+								if(totalRecords>0){
+									$("#showrecode").html(htmltr);
+								}
+								//生成分页
+								//有些参数是可选的，比如lang，若不传有默认值
+								kkpager.generPageHtml({
+									pno: pageNo,
+									//总页码
+									total: totalPage,
+									//总数据条数
+									totalRecords: totalRecords,
+									isGoPage: false,
+									mode: 'click', //默认值是link，可选link或者click
+									click: function(n) {
+										queryinviteCode(n);
+									}
+								},true);
+								var totalchtml = "<span style='padding-left: 20px;'>"+totalRecords+"条记录</span>"
+								$(".infoTextAndGoPageBtnWrap").append(totalchtml);
+								if(totalRecords==0){
+									$("#showrecode").empty();
+									$(".querytips").show();
+								}							
+						}
+					}
+				});
+			}
+		</script>
+	</body>
+
+</html>
